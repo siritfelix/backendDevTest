@@ -31,3 +31,12 @@ The following topics will be considered:
 - Code clarity and maintainability
 - Performance
 - Resilence
+## Solution
+The source code of the solution is in the directory `/devtest`. To execute it, the docker-compose.yaml was modified by adding the new service together with its Dockerfile. To start all the services, you must execute the init.sh file with the command 
+``` 
+./init.sh
+``` 
+It will create the executable of the solution code, along with the mocks and the infrastructure, in addition to running the tests.
+
+The api is available in:
+  [http://localhost:5000/product/1/similar](http://localhost:5000/product/1/similar).
